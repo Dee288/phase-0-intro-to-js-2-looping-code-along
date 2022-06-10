@@ -1,10 +1,12 @@
-function writeCards( namesArray, event ) {
-  let thankYouCards = []
+const namesArray = ['Guadalupe', 'Ollie', 'Aki'] 
+
+function writeCards( namesArray, event) {
   for ( let i = 0; i < namesArray.length; i++ ) {
-    thankYouCards.push( `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!` )
+    console.log( `Thank you, ${namesArray[i]}, for the wonderful surprise gift!` )
   }
-  return thankYouCards
+  return namesArray
 }
+writeCards()
 
 function countDown( startingNumber ) {
   while ( startingNumber > 0 ) {
@@ -13,3 +15,4 @@ function countDown( startingNumber ) {
   }
   console.log( startingNumber );
 }
+
